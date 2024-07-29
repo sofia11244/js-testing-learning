@@ -1,20 +1,45 @@
 <!DOCTYPE html>
+
+<!-- SHIFT+1 IS SHORTCUT FOR TO TYPE DOCTYPE  -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css">
     <title>Document</title>
 </head>
 <body>
 
-<div>
+<form>
+    <h1>Temperature conversion</h1>
+    <input type="number" id="textBox" value="0"> <br>
+
+    <input type="radio" name="unit" id="toFahrenheit">
+    <label for="toFahrenheit">Celsius -> Fahrenheit</label>
+
+    <input type="radio" name="unit" id="toCelsius">
+    <label for="toCelsius">Fahrenheit -> Celsius</label>
+
+    <button type="button" onclick="convert()">submit</button>
+    <p id="result"></p>
+
+    
+</form>
+
+
+<!-- <div>
+
     <p id="p1"></p>
     <p id="p2"></p>
     <p id="p3"></p>
-</div>
+    
+</div> -->
 
     <!-- write at the end of body first load everytghing then js to not get error -->
-    <script src="./app.js"></script>
-    <!-- wşrte scrşpt then press tab there you have element script -->
+    <script src="./lms.js"></script>
+    <script src="./temp.js"></script>
+
+
+    <!-- write script then press tab there you have element script -->
 </body>
 </html>
