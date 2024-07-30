@@ -5,22 +5,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- USERNAME INPUT -->
+     <div class="username-input">
+        <h1 id="welcome">Welcome</h1>
 
-<form>
+<label id="username">username:</label>
+<input type="text" id="myText"> <br> <br>
+<button id="mySubmit">submit</button>
+     </div>
+
+
+
+<!-- THERMOMETER CONVERSION -->
+<form class="form">
     <h1>Temperature conversion</h1>
     <input type="number" id="textBox" value="0"> <br>
 
     <input type="radio" name="unit" id="toFahrenheit">
-    <label for="toFahrenheit">Celsius -> Fahrenheit</label>
+    <label for="toFahrenheit">Celsius -> Fahrenheit</label><br>
 
     <input type="radio" name="unit" id="toCelsius">
-    <label for="toCelsius">Fahrenheit -> Celsius</label>
+    <label for="toCelsius">Fahrenheit -> Celsius</label> <br><br>
 
-    <button type="button" onclick="convert()">submit</button>
+    <button id="button" type="button" onclick="convert()">submit</button>
     <p id="result"></p>
 
     
@@ -38,6 +49,8 @@
     <!-- write at the end of body first load everytghing then js to not get error -->
     <script src="./lms.js"></script>
     <script src="./temp.js"></script>
+    <script src="./user-input.js"></script>
+
 
 
     <!-- write script then press tab there you have element script -->
