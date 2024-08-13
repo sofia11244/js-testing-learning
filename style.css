@@ -1,5 +1,6 @@
 body{
     font-family: sans-serif;
+    text-align: center;
 }
 
 form{
@@ -22,4 +23,17 @@ form{
 .username-input{
     text-align: center;
     margin-bottom: 20px;
+}
+
+#random-num-button{
+    margin-top: 30px;
+    padding: 10px 15px;
+    border-radius: 5%;
+}
+#random-num-label{
+    font-size: 30px;
+}
+.random-num{
+    text-align: center;
+    margin-top: 30px;
 }
